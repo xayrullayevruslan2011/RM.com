@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ruslan | Shop - Xitoydan Tovar Keltirish</title>
+  <style>
+    :root {
+      --portal-blue: #003366;
+      --portal-gold: #D4AF37;
+      --portal-light: #F8FAFC;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    .glass-nav {
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      background: rgba(255, 255, 255, 0.8);
+    }
+    .dark .glass-nav {
+      background: rgba(15, 23, 42, 0.8);
+    }
+    .fade-in {
+      animation: fadeIn 0.5s ease-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(15px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .china-bg {
+      background-image: radial-gradient(circle at 2px 2px, rgba(0,0,0,0.05) 1px, transparent 0);
+      background-size: 24px 24px;
+    }
+  </style>
+  <link rel="stylesheet" href="/index.css">
+</head>
+<body class="light china-bg">
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

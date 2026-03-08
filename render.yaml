@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: ruslan-shop
+    env: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: TELEGRAM_TOKEN
+        sync: false
+      - key: VITE_ADMIN_ID
+        sync: false
+      - key: VITE_ADMIN_CODE
+        sync: false
+      - key: VITE_REF_LINK
+        sync: false

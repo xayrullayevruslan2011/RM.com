@@ -1,0 +1,7 @@
+{
+  "name": "Ruslan | Shop",
+  "description": "Xitoydan (1688, Taobao) tovar keltirish bo'yicha sizning ishonchli hamkoringiz.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
